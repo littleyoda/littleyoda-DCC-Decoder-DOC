@@ -1,0 +1,39 @@
+site_name: 'Little-Yoda Decoer'
+site_description: 'xx'
+site_author: 'Sven Bursch-Osewold'
+
+repo_url: https://github.com/littleyoda/littleyoda-DCC-Decoder
+
+
+docs_dir: docs_source
+
+site_dir: docs
+
+theme: windmill
+
+nav:
+- Home: index.md
+- Funktionsumfang: Entwicklung/Funktionsumfang.md
+- Nutzung:
+    - Erste Schritte: Nutzung/Erste-Schritte.md
+    - Firmware Updates: Nutzung/Firmware-Updates.md
+- Anwendung:
+    - DCC-Generator: 
+        - Einführung: Anwendung/DCC-Generator/index.md
+        - DRV8870: Anwendung/DCC-Generator/DCC_Generator_DRV8870.md
+        - L298N: Anwendung/DCC-Generator/DCC_Generator_L298N.md
+    - Weichendekoder: Anwendung/Weichendekoder/USECASE_Weichendekoder.md
+    - Lokdekoder:
+        - BTS7960: Anwendung/Lokdekoder/Lokdekoder_BTS7960.md
+        - DRV8870: Anwendung/Lokdekoder/Lokdekoder_DRV8870.md
+- Basis Schaltungen:
+    - DCC-Generator: Hardware/DCC-Decoder.md
+- Entwicklung:
+    - Entwicklungsumgebung: Entwicklung/Entwicklungsumgebung.md
+    - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
+    - Nutzung Eclipse: Entwicklung/Entwicklung Eclipse.md
+    - Debuggen: Entwicklung/DebugSerial.md
+    - Framework: Entwicklung/Framework.md
+- Erklärungen:
+    - H-Bridge: Erklärungen/H-Bridge.md    
+- FAQ: FAQ.md
