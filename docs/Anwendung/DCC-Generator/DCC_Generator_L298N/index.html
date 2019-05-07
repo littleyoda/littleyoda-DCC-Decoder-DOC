@@ -1,199 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Sven Bursch-Osewold">
+    
+    <link rel="shortcut icon" href="../../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>L298N - Little-Yoda Decoer</title>
+    <link href="../../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../../..';
+      var is_top_frame = false;
         
-        
-        
-        <link rel="shortcut icon" href="../../../img/favicon.ico">
-        <title>DCC Generator mit Hilfe einer L298N-Platine - My Docs</title>
-        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+        var pageToc = [
+          {title: "DCC Generator mit Hilfe einer L298N-Platine", url: "#_top", children: [
+              {title: "Schaltplan / Aufbau", url: "#schaltplan-aufbau" },
+              {title: "Ansteuerung", url: "#ansteuerung" },
+              {title: "Nutzungsbeispeile", url: "#nutzungsbeispeile" },
+              {title: "Technischer Hintergrund", url: "#technischer-hintergrund" },
+          ]},
+        ];
 
-        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
+    </script>
+    <script src="../../../js/base.js"></script> 
+</head>
 
-    <body>
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
 
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
 
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../../..">My Docs</a>
-                </div>
 
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../../..">Home</a>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Anwendung <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../">Iovis removit sparsa</a>
-</li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">DCC Generator</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../">DCC Generierung</a>
-</li>
-            
-<li >
-    <a href="../DCC_Generator_DRV8870/">DCC Generator mit Hilfe einer DRV8870-Platine</a>
-</li>
-            
-<li class="active">
-    <a href="./">DCC Generator mit Hilfe einer L298N-Platine</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Lokdekoder</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../Lokdekoder/Lokdekoder_BTS7960/">Lokdekoder (BTS7960)</a>
-</li>
-            
-<li >
-    <a href="../../Lokdekoder/Lokdekoder_DRV8870/">Lokdekoder (DRV8870)</a>
-</li>
-    </ul>
-  </li>
-                                    
-  <li class="dropdown-submenu">
-    <a href="#">Weichendekoder</a>
-    <ul class="dropdown-menu">
-            
-<li >
-    <a href="../../Weichendekoder/USECASE_Weichendekoder/">Weichendecoder</a>
-</li>
-    </ul>
-  </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Entwicklung <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../../Entwicklung/DebugSerial/">Debug über die serielle Schnittstelle</a>
-</li>
-                                    
-<li >
-    <a href="../../../Entwicklung/Entwicklungsumgebung/">Entwicklungsumgebung</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Old <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../../old/Begriff-H-Bridge/">H-Bridge</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/Erste-Schritte/">Erste Schritte</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/FAQ/">Nutzung einer z21/Z21</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/Firmware-Updates/">Firmware Updates</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/Framework/">Framework</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/Funktionsumfang/">Funktionsumfang</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/Platinen/">Platinen</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/_Footer/"> Footer</a>
-</li>
-                                    
-<li >
-    <a href="../../../old/_Sidebar/"> Sidebar</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
 
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../DCC_Generator_DRV8870/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../../Lokdekoder/Lokdekoder_BTS7960/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    
+    
+      
+    
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#dcc-generator-mit-hilfe-einer-l298n-platine">DCC Generator mit Hilfe einer L298N-Platine</a></li>
-            <li><a href="#schaltplan-aufbau">Schaltplan / Aufbau</a></li>
-            <li><a href="#ansteuerung">Ansteuerung</a></li>
-            <li><a href="#nutzungsbeispeile">Nutzungsbeispeile</a></li>
-            <li><a href="#technischer-hintergrund">Technischer Hintergrund</a></li>
-    </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../Weichendekoder/USECASE_Weichendekoder/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../Weichendekoder/USECASE_Weichendekoder/" class="btn btn-xs btn-link">
+        Weichendekoder
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../DCC_Generator_DRV8870/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../DCC_Generator_DRV8870/" class="btn btn-xs btn-link">
+        DRV8870
+      </a>
+    </div>
+    
+  </div>
 
-<h1 id="dcc-generator-mit-hilfe-einer-l298n-platine">DCC Generator mit Hilfe einer L298N-Platine</h1>
-<p>Dieses Dokument beschreibt wohl den einfachsten Aufbau eines <a href="USECASE_DCC_Generator">DCC Generators</a>.</p>
+    
+
+    <h1 id="dcc-generator-mit-hilfe-einer-l298n-platine">DCC Generator mit Hilfe einer L298N-Platine</h1>
+<p>Dieses Dokument beschreibt wohl den einfachsten Aufbau eines <a href="../">DCC Generators</a>.</p>
 <h2 id="schaltplan-aufbau">Schaltplan / Aufbau</h2>
 <p>Die aktuelle Schaltung besteht aus einem NodeMCU (D1 oder ähnliches würde natürlich auch gehen), einer L298N Motor Platine, einem NPN-Transitor (2N2222A), zwei 1k Ohm Widerstände und einem Akku-Pack.</p>
-<p><kbd><img alt="" src="/img/L298nDCC.png" /></kbd></p>
+<p><img alt="" src="/img/L298nDCC.png" /></p>
 <p>Natürlich können auch andere H-Bridge genutzt werden. Hier muss ggf. noch eine unabhängig 5V Versorgung hinzugefügt werden.</p>
 <p><img alt="" src="https://www.open4me.de/my-content/20170708_DCC_Generator.jpg" /></p>
 <h2 id="ansteuerung">Ansteuerung</h2>
@@ -207,92 +102,59 @@
 <p>Zoltan hat diesen Ansatz in seiner Harzkamel eingebaut.</p>
 <p>Im Garten Bahn Forum hat er den Einbau <a href="http://www.gbforum.de/viewtopic.php?f=17&amp;t=1087">dokumentiert</a>.</p>
 <p><a href="https://www.youtube.com/watch?v=voZzVlcHkOM"><img alt="Harzkamel" src="https://img.youtube.com/vi/voZzVlcHkOM/0.jpg" /></a></p>
-<p><kbd><img alt="" src="img/DCC_Generator1.jpg" />Copyright by Zoltan Egyed</kbd>
-<kbd><img alt="" src="img/DCC_Generator2.jpg" />Copyright by Zoltan Egyed</kbd></p>
+<p><img alt="" src="/img/DCC_Generator1.jpg" />
+<em>Copyright by Zoltan Egyed</em>
+<img alt="" src="/img/DCC_Generator2.jpg" />
+<em>Copyright by Zoltan Egyed</em></p>
 <p>Bestandteile:
-<em> Nodemcu-Board
-</em> L293D-Platine
-<em> Widerstände + Transistor
-</em> 4 16850 Akkus
-* ESU LokSound 4 XL </p>
+- Nodemcu-Board
+- L293D-Platine
+- Widerstände + Transistor
+- 4 16850 Akkus
+- ESU LokSound 4 XL </p>
 <h2 id="technischer-hintergrund">Technischer Hintergrund</h2>
-<p>siehe <a href="USECASE_DCC_Generator">DCC Generator</a></p></div>
-        </div>
+<p>siehe <a href="../">DCC Generator</a></p>
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../../js/base.js" defer></script>
-        <script src="../../../search/main.js" defer></script>
+  <br>
+    
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../Weichendekoder/USECASE_Weichendekoder/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../Weichendekoder/USECASE_Weichendekoder/" class="btn btn-xs btn-link">
+        Weichendekoder
+      </a>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
+    
+    <div class="wm-article-nav">
+      <a href="../DCC_Generator_DRV8870/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../DCC_Generator_DRV8870/" class="btn btn-xs btn-link">
+        DRV8870
+      </a>
     </div>
+    
+  </div>
+
+    <br>
 </div>
 
-    </body>
+<footer class="col-md-12 wm-page-content">
+      <p>
+        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Anwendung/DCC-Generator/DCC_Generator_L298N.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Sven Bursch-Osewold">
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>H-Bridge - Little-Yoda Decoer</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "H-Bridge", url: "#_top", children: [
+              {title: "Chips", url: "#chips" },
+              {title: "Fertige Platinen", url: "#fertige-platinen" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../FAQ/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../FAQ/" class="btn btn-xs btn-link">
+        FAQ
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../Entwicklung/Framework/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../Entwicklung/Framework/" class="btn btn-xs btn-link">
+        Framework
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h1 id="h-bridge">H-Bridge</h1>
+<p>Eine H-Bridge dient der Ansteuerung von Gleichstorm-Motoren.
+Vereinfacht ausgedrückt sorgt sie dafür, dass die Polarität umgekehrt werden kann, der Motor sich also vorwärts und rückwärts drehen kann.</p>
+<p>In Rahmen dieses Projektes, habe ich mit folgenden H-Bridges "gespielt":</p>
+<h2 id="chips">Chips</h2>
+<h3 id="l293d"><a href="http://www.ti.com/lit/ds/symlink/l293.pdf">L293D</a></h3>
+<p>Ist für 0,6A (1,2A Peak) ausgelegt. Ich nutze sie für meinen Weichendekoder. Mit <a href="http://s.click.aliexpress.com/e/3rzjiqJEi?4">50 Cent (*)</a> unschlagbar billigt, aber der Chip verzeiht keine Fehler. Wenn die Ausgänge etwas zu lange aktiv sind, gibt sie schon mal Rauchzeichen von sich.</p>
+<h3 id="drv8870"><a href="http://www.ti.com/product/DRV8870">DRV8870</a></h3>
+<p>Diese H-Bridge ist für 2A (3,6A Peak) ausgelegt. Ich nutze sie für meinen Lokdekoder. Mit einem Preis von knapp 2€ nicht ganz so preiswert. Als <a href="https://de.wikipedia.org/wiki/Surface-mounted_device">SMD-Bauteil</a> ist der Chip nicht einfach zu löten. Die größte Herausforderung ist, dass es unter dem Chip eine Metallfläche gibt, die für die  Wärmeableitung zuständig ist und normalerweise auf die Platine gelötet werden muss. Dieses ist jedoch mit Hobbymitteln nicht wirklich möglich. </p>
+<h2 id="fertige-platinen">Fertige Platinen</h2>
+<h3 id="l298n"><a href="http://s.click.aliexpress.com/e/ynAieqV%22">L298N</a></h3>
+<p>Diese Platine wurde im Test des DCC-Signal-Generators genutzt und trieb erfolgreichen einen Playmobil-Motorblock an.</p>
+<h3 id="bts7960"><a href="http://s.click.aliexpress.com/e/zNrbMFE">BTS7960</a></h3>
+<p>Diese Platine habe ich im Lokdekoder für eine Piko-Lok mit zwei Motoren genutzt.</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../FAQ/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../FAQ/" class="btn btn-xs btn-link">
+        FAQ
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../../Entwicklung/Framework/" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../../Entwicklung/Framework/" class="btn btn-xs btn-link">
+        Framework
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+      <p>
+        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Erklärungen/H-Bridge.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>

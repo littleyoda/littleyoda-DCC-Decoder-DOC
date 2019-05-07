@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Sven Bursch-Osewold">
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Funktionsumfang - Little-Yoda Decoer</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Quelle", url: "#_top", children: [
+          ]},
+          {title: "Aktoren", url: "#aktoren", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../Nutzung/Erste-Schritte/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../Nutzung/Erste-Schritte/" class="btn btn-xs btn-link">
+        Erste Schritte
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <p>Der Funktionsumfang hängt natürlich primär von der genutzten Hardware ab. Im Prinzip wird aber folgendes unterstützt:</p>
+<h1 id="quelle">Quelle</h1>
+<p>Befehle können, je nach Hardware, über die folgenden Wege empfangen werden:</p>
+<ul>
+<li>klassisch über ein DCC-Signal<br>(Schaltung mit Optokoppler ist notwendig)</li>
+<li><a href="http://www.z21.eu/">z21-Zentrale</a> drahtlos über WLAN.<br>
+    Hierbei spielt es keine Rolle, wie die z/Z21 angesteuert wird (Z21-App, Multimaus, WLAN Maus, ...). Der Decoer kommuniziert mit der z/Z21 via WLAN und erhält so den aktuellen Zustand der Loks und Weichen.</li>
+<li>Über die WLAN-Maus oder über die Z21-App ohne(!) z21-Zentrale. <br>
+ Hierbei simuliert der esp8266 eine z21 und die WLAN-Maus oder die Z21-App kommuniziert direkt mit dem Decoder.</li>
+<li>Webbrowser drahtlos via WLAN<br>Rudimentäre Unterstützung über jeden aktuellen Browser</li>
+<li>Rocrail<br>Nutzung von Rocrail als Zentrale
+Andere Zentralen, die über einen Netzwerkanschluss verfügen, können relativ einfach hinzugefügt werden. Hierzu muss eine Klasse analog zur Klasse CmdReceiverZ21Wlan implementiert werden.</li>
+</ul>
+<h1 id="aktoren">Aktoren</h1>
+<ul>
+<li>Ansteuerung von Weichenmotoren<br>Hiermit können die klassischen LGB oder PIKO Weichenmotoren angesteuert werden. Notwendig ist hierbei eine H-Bridge, wie z.B. L293D notwendig</li>
+<li>LED<br>Zur Zeit nur an oder aus. Hierbei ist ein Transistor oder ähnliches notwendig, da der esp8266 nicht auf ein direktes anschließen der LED ausgelegt ist.</li>
+<li>Servo<br>Ansteuerung von Servos. Keine spezielle Hardware notwendig</li>
+<li>DC Motoren<br>Ansteuerung von Motoren via PWM-Signal. Hierbei ist eine H-Bridge notwendig</li>
+<li>DCC Signal Generator<br>Hierbei wird ein DCC-Signal generiert; der ESP8266 verwandelt sich somit in eine kleine Art Minizentrale, die komplett in einem Zug eingebaut werden kann. Mit der Kombination Akku, ESP8266, H-Bridge und DCC-Decoder kann man einen autonomen Zug bauen, der weiterhin alle Vorzüge eines DCC-Decoders (z.B. Soundausgabe) bietet.</li>
+</ul>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="../../Nutzung/Erste-Schritte/" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="../../Nutzung/Erste-Schritte/" class="btn btn-xs btn-link">
+        Erste Schritte
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../.." class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../.." class="btn btn-xs btn-link">
+        Home
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="col-md-12 wm-page-content">
+      <p>
+        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Entwicklung/Funktionsumfang.md"><i class="fa fa-github"></i>
+Edit on GitHub</a>
+      </p>
+  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
+</footer>
+
+</body>
+</html>
