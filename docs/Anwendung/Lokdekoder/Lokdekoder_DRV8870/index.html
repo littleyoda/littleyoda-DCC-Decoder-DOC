@@ -84,26 +84,26 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="lokdekoder-drv8870">Lokdekoder (DRV8870)</h1>
+    <h3 id="lokdekoder-drv8870">Lokdekoder (DRV8870)</h3>
 <p>Dieser Dekoder ist wahlweise mit einer oder zwei <a href="/Erklärungen/H-Bridge.md">H-Bridge</a> vom Typ <a href="http://www.ti.com/product/DRV8870">DRV8870</a> ausgestattet und sollte somit auch für Piko-Loks mit zwei Motoren geeignet sein.</p>
 <p><img alt="" src="../../../img/Lokdekoder_DRV8870.jpg" /></p>
 <p><a href="http://gartenbahn-45-mm.phpbb8.de/allgemein-f29/lok-akku-und-wlan-nahtlose-z21-integration-t8336-15.html#p105953">Weitere Informationen</a></p>
-<h2 id="funktionsumfang">Funktionsumfang</h2>
+<h4 id="funktionsumfang">Funktionsumfang</h4>
 <ul>
 <li>2x DRV8870 mit je max 2A</li>
 <li>8x unverstärkte Ausgänge</li>
 <li>8x verstärkte Ausgänge</li>
 </ul>
-<h2 id="ansteuerung">Ansteuerung</h2>
+<h4 id="ansteuerung">Ansteuerung</h4>
 <p>Die Lösung kann über 2 Wege gesteuert werden:</p>
 <ul>
 <li>Der Decoder kann sich über WLAN mit einer Z21 verbinden und von dort die Befehle erhalten.</li>
-<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.
+<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.<br />
    Anschließend kann man den Decoder direkt und ohne die Notwendigkeit einer Z21 ansteuern. Die Z21-App oder die WLAN-Maus kann zur Steuerung genutzt werden.</li>
 </ul>
-<h2 id="schlatplan-aufbau">Schlatplan / Aufbau</h2>
-<h2 id="technischer-hintergrund">Technischer Hintergrund</h2>
-<p>Um die Anzahl der Ausgänge zu erhöhen, wird ein Port-Expander (MCP23017) genutzt der via i²C an den ESP8266 angeschlossen ist. 8 Ausgänge des MCP23017 steuern einen ULN2803A an. Somit stehen 8 "unverstärkte" und 8 "verstärkte" Ausgänge zur Verfügung.</p>
+<h4 id="schlatplan-aufbau">Schlatplan / Aufbau</h4>
+<h4 id="technischer-hintergrund">Technischer Hintergrund</h4>
+<p>Um die Anzahl der Ausgänge zu erhöhen, wird ein Port-Expander (MCP23017) genutzt der via i²C an den ESP8266 angeschlossen ist. 8 Ausgänge des MCP23017 steuern einen ULN2803A an. Somit stehen 8 &ldquo;unverstärkte&rdquo; und 8 &ldquo;verstärkte&rdquo; Ausgänge zur Verfügung.</p>
 
   <br>
     

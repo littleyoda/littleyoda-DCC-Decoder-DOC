@@ -83,19 +83,19 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <p>Der Funktionsumfang hängt natürlich primär von der genutzten Hardware ab. Im Prinzip wird aber folgendes unterstützt:</p>
-<h1 id="quelle">Quelle</h1>
+<h3 id="quelle">Quelle</h3>
 <p>Befehle können, je nach Hardware, über die folgenden Wege empfangen werden:</p>
 <ul>
 <li>klassisch über ein DCC-Signal<br>(Schaltung mit Optokoppler ist notwendig)</li>
-<li><a href="http://www.z21.eu/">z21-Zentrale</a> drahtlos über WLAN.<br>
-    Hierbei spielt es keine Rolle, wie die z/Z21 angesteuert wird (Z21-App, Multimaus, WLAN Maus, ...). Der Decoder kommuniziert mit der z/Z21 via WLAN und erhält so den aktuellen Zustand der Loks und Weichen.</li>
-<li>Über die WLAN-Maus oder über die Z21-App ohne(!) z21-Zentrale. <br>
+<li><a href="http://www.z21.eu/">z21-Zentrale</a> drahtlos über WLAN.<br><br />
+    Hierbei spielt es keine Rolle, wie die z/Z21 angesteuert wird (Z21-App, Multimaus, WLAN Maus, &hellip;). Der Decoder kommuniziert mit der z/Z21 via WLAN und erhält so den aktuellen Zustand der Loks und Weichen.</li>
+<li>Über die WLAN-Maus oder über die Z21-App ohne(!) z21-Zentrale. <br><br />
  Hierbei simuliert der esp8266 eine z21 und die WLAN-Maus oder die Z21-App kommuniziert direkt mit dem Decoder.</li>
 <li>Webbrowser drahtlos via WLAN<br>Rudimentäre Unterstützung über jeden aktuellen Browser</li>
-<li>Rocrail<br>Nutzung von Rocrail als Zentrale
+<li>Rocrail<br>Nutzung von Rocrail als Zentrale<br />
 Andere Zentralen, die über einen Netzwerkanschluss verfügen, können relativ einfach hinzugefügt werden. Hierzu muss eine Klasse analog zur Klasse CmdReceiverZ21Wlan implementiert werden.</li>
 </ul>
-<h1 id="aktoren">Aktoren</h1>
+<h3 id="aktoren">Aktoren</h3>
 <ul>
 <li>Ansteuerung von Weichenmotoren<br>Hiermit können die klassischen LGB oder PIKO Weichenmotoren angesteuert werden. Notwendig ist hierbei eine H-Bridge, wie z.B. L293D notwendig</li>
 <li>LED<br>Zur Zeit nur an oder aus. Hierbei ist ein Transistor oder ähnliches notwendig, da der esp8266 nicht auf ein direktes anschließen der LED ausgelegt ist.</li>

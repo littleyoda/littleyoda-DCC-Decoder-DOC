@@ -11,6 +11,20 @@ site_dir: docs
 
 theme: windmill
 
+plugins:
+  - exclude:
+      glob:
+        - "*.md~"
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+    - sane_lists
+    - nl2br
+    - toc:
+        baselevel: 3
+
 nav:
 - Home: index.md
 - Funktionsumfang: Entwicklung/Funktionsumfang.md
@@ -28,6 +42,7 @@ nav:
         - DRV8870: Anwendung/Lokdekoder/Lokdekoder_DRV8870.md
 - Basis Schaltungen:
     - DCC-Decoder: Hardware/DCC-Decoder.md
+    - Susi: Hardware/Susi.md
 - Entwicklung:
     - Entwicklungsumgebung: Entwicklung/Entwicklungsumgebung.md
     - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
@@ -37,9 +52,4 @@ nav:
 - Erklärungen:
     - H-Bridge: Erklärungen/H-Bridge.md    
 - FAQ: FAQ.md
-
-
-plugins:
-  - exclude:
-      glob:
-        - "*.md~"
+- Forum: https://forum.open4me.de

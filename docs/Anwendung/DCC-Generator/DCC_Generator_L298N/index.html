@@ -84,35 +84,35 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="dcc-generator-mit-hilfe-einer-l298n-platine">DCC Generator mit Hilfe einer L298N-Platine</h1>
+    <h3 id="dcc-generator-mit-hilfe-einer-l298n-platine">DCC Generator mit Hilfe einer L298N-Platine</h3>
 <p>Dieses Dokument beschreibt wohl den einfachsten Aufbau eines <a href="../">DCC Generators</a>.</p>
-<h2 id="schaltplan-aufbau">Schaltplan / Aufbau</h2>
+<h4 id="schaltplan-aufbau">Schaltplan / Aufbau</h4>
 <p>Die aktuelle Schaltung besteht aus einem NodeMCU (D1 oder ähnliches würde natürlich auch gehen), einer L298N Motor Platine, einem NPN-Transitor (2N2222A), zwei 1k Ohm Widerstände und einem Akku-Pack.</p>
 <p><img alt="" src="../../../img/L298nDCC.png" /></p>
 <p>Natürlich können auch andere H-Bridge genutzt werden. Hier muss ggf. noch eine unabhängig 5V Versorgung hinzugefügt werden.</p>
 <p><img alt="" src="https://www.open4me.de/my-content/20170708_DCC_Generator.jpg" /></p>
-<h2 id="ansteuerung">Ansteuerung</h2>
+<h4 id="ansteuerung">Ansteuerung</h4>
 <p>Die Lösung kann über 2 Wege gesteuert werden:</p>
 <ul>
 <li>Der Decoder kann sich über WLAN mit einer Z21 verbinden und von dort die Befehle erhalten.</li>
-<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.
+<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.<br />
    Anschließend kann man den Decoder direkt und ohne die Notwendigkeit einer Z21 ansteuern. Die Z21-App oder die WLAN-Maus kann zur Steuerung genutzt werden.</li>
 </ul>
-<h2 id="nutzungsbeispeile">Nutzungsbeispeile</h2>
+<h4 id="nutzungsbeispeile">Nutzungsbeispeile</h4>
 <p>Zoltan hat diesen Ansatz in seiner Harzkamel eingebaut.</p>
 <p>Im Garten Bahn Forum hat er den Einbau <a href="http://www.gbforum.de/viewtopic.php?f=17&amp;t=1087">dokumentiert</a>.</p>
 <p><a href="https://www.youtube.com/watch?v=voZzVlcHkOM"><img alt="Harzkamel" src="https://img.youtube.com/vi/voZzVlcHkOM/0.jpg" /></a></p>
-<p><img alt="" src="../../../img/DCC_Generator1.jpg" />
-<em>Copyright by Zoltan Egyed</em>
-<img alt="" src="../../../img/DCC_Generator2.jpg" />
+<p><img alt="" src="../../../img/DCC_Generator1.jpg" /><br />
+<em>Copyright by Zoltan Egyed</em><br />
+<img alt="" src="../../../img/DCC_Generator2.jpg" /><br />
 <em>Copyright by Zoltan Egyed</em></p>
-<p>Bestandteile:
-- Nodemcu-Board
-- L293D-Platine
-- Widerstände + Transistor
-- 4 16850 Akkus
+<p>Bestandteile:<br />
+- Nodemcu-Board<br />
+- L293D-Platine<br />
+- Widerstände + Transistor<br />
+- 4 16850 Akkus<br />
 - ESU LokSound 4 XL </p>
-<h2 id="technischer-hintergrund">Technischer Hintergrund</h2>
+<h4 id="technischer-hintergrund">Technischer Hintergrund</h4>
 <p>siehe <a href="../">DCC Generator</a></p>
 
   <br>

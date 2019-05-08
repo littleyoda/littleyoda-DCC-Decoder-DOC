@@ -83,19 +83,19 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="lokdekoder-bts7960">Lokdekoder (BTS7960)</h1>
+    <h3 id="lokdekoder-bts7960">Lokdekoder (BTS7960)</h3>
 <p>Für diesen Lokdekoder wird eine fertige <a href="/Erklärungen/H-Bridge.md">H-Bridge</a> vom Typ BTS7960 genutzt. Diese H-Bridge ist ausreichend, um z.B. eine Piko-Lok mit zwei Motoren anzutreiben.</p>
-<h2 id="ansteuerung">Ansteuerung</h2>
+<h4 id="ansteuerung">Ansteuerung</h4>
 <p>Die Lösung kann über 2 Wege gesteuert werden:</p>
 <ul>
 <li>Der Decoder kann sich über WLAN mit einer Z21 verbinden und von dort die Befehle erhalten.</li>
-<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.
+<li>Der Decoder kann eine Z21 simulieren und ein WLAN-Netz aufspannen.<br />
    Anschließend kann man den Decoder direkt und ohne die Notwendigkeit einer Z21 ansteuern. Die Z21-App oder die WLAN-Maus kann zur Steuerung genutzt werden.</li>
 </ul>
-<h2 id="schlatplan-aufbau">Schlatplan / Aufbau</h2>
+<h4 id="schlatplan-aufbau">Schlatplan / Aufbau</h4>
 <p><img alt="" src="../../../img/Lokdekoder_BTS7960.jpg" /></p>
-<h2 id="technischer-hintergrund">Technischer Hintergrund</h2>
-<p>Ich habe den Aufbau über einen Step-Up Regler (Ausgang: ~17V) gewählt, damit ich auch andere Akkupacks anschließen kann, die niedrige Spannungen liefern. Testweise habe ich es mit einer 5V USB Powerbank getestet. Hierbei überhitzt der ausgewählte  Step-Up-Regler. Sollte jemand den 5V Weg gehen wollen, könnte man Kühlköper probieren. Ich vermute aber, dass man einen anderen Step-Up-Regler auswählen müsste.
+<h4 id="technischer-hintergrund">Technischer Hintergrund</h4>
+<p>Ich habe den Aufbau über einen Step-Up Regler (Ausgang: ~17V) gewählt, damit ich auch andere Akkupacks anschließen kann, die niedrige Spannungen liefern. Testweise habe ich es mit einer 5V USB Powerbank getestet. Hierbei überhitzt der ausgewählte  Step-Up-Regler. Sollte jemand den 5V Weg gehen wollen, könnte man Kühlköper probieren. Ich vermute aber, dass man einen anderen Step-Up-Regler auswählen müsste.<br />
 Je nach Spannung des Akku kann der Step-Up Regler aber auch ersatzlos entfallen. </p>
 <p>Bei den Akkus habe ich mich bewusst für geschützte Akkus entschieden und kann dadurch eine zusätzliche Schutz- und Entladeschaltung verzichten. Da das Thema Fälschung von Akkus ein ziemliches Problem darstellt, sollte man bei vertrauenswürdigen Lieferanten kaufen. </p>
 

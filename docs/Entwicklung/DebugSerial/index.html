@@ -80,20 +80,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <h1 id="debug-uber-die-serielle-schnittstelle">Debug über die serielle Schnittstelle</h1>
+    <h3 id="debug-uber-die-serielle-schnittstelle">Debug über die serielle Schnittstelle</h3>
 <p>Wenn man den ESP8266 über ein USB-Kabel mit dem Computer verbindet, kann auf dem ESP8266 über die serielle Schnittstelle zugegriffen werden. Als Baudrate ist 115200 einzustellen.</p>
 <p>Im laufenden Betrieb werden zum einen die Logmeldeungen über die serielle Schnittstelle ausgegeben, zum anderen stehen verschiedene Befehle im Debugmodus zur Verfügung. </p>
-<p>Der Debugsmodus wird durch das Senden der Zeichenfolge <strong>'debug'</strong> aktiviert. Anschließend können die Befehle über einzelne Buchstaben ausgelöst werdem. Groß- und Kleinschreibung sind relevant.</p>
+<p>Der Debugsmodus wird durch das Senden der Zeichenfolge <strong>&lsquo;debug&rsquo;</strong> aktiviert. Anschließend können die Befehle über einzelne Buchstaben ausgelöst werdem. Groß- und Kleinschreibung sind relevant.</p>
 <p>Folgende Befehle sind implementiert:</p>
-<p>'d': 
+<p>&lsquo;d&rsquo;: <br />
 Zeigt diverse Informationen über den ESP8266 inkl. Speicher und Wifi-Status an.</p>
-<p>'r': 
+<p>&lsquo;r&rsquo;: <br />
 Startet den ESP8266 neu. Dieser Weg funktioniert nicht, wenn der ESP8266 gerade neu geflasht wurde.</p>
-<p>'D':
-löscht das aktuelle Konfig-File. Nach dem Neustarten des ESP8266 ist er wieder über das WLAN-Netz "Hallo World" und der IP-Adresse 192.168.4.1 erreichbar.</p>
-<p>'a':
-Aktiviert den AccessPoint-Modus unabhängig vom Konfig-File. Die genutzte IP-Adresse kann über die 'd'-Funktion angezeigt werden.</p>
-<p>'c':
+<p>&lsquo;D&rsquo;:<br />
+löscht das aktuelle Konfig-File. Nach dem Neustarten des ESP8266 ist er wieder über das WLAN-Netz &ldquo;Hallo World&rdquo; und der IP-Adresse 192.168.4.1 erreichbar.</p>
+<p>&lsquo;a&rsquo;:<br />
+Aktiviert den AccessPoint-Modus unabhängig vom Konfig-File. Die genutzte IP-Adresse kann über die &lsquo;d&rsquo;-Funktion angezeigt werden.</p>
+<p>&lsquo;c&rsquo;:<br />
 Anzeige des Konfig-Files</p>
 
   <br>
