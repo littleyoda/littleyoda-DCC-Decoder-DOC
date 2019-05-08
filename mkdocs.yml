@@ -27,7 +27,7 @@ nav:
         - BTS7960: Anwendung/Lokdekoder/Lokdekoder_BTS7960.md
         - DRV8870: Anwendung/Lokdekoder/Lokdekoder_DRV8870.md
 - Basis Schaltungen:
-    - DCC-Generator: Hardware/DCC-Decoder.md
+    - DCC-Decoder: Hardware/DCC-Decoder.md
 - Entwicklung:
     - Entwicklungsumgebung: Entwicklung/Entwicklungsumgebung.md
     - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md

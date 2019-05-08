@@ -47,7 +47,7 @@ Die erste Kontaktaufnahme erfolgt über WLAN. Nachdem der ESP8266 fertig ist und
 
 Anschließend müssen die Dateien css.css und milligram.min.css hochgeladen werden.
 Hierzu muss das Ordnersymbol angeklickt werden:
-<kbd>![](img/ohneCSSList.png)</kbd>
+![](/img/ohneCSSList.png)
 
 Anschließend für beide Dateien jeweils einmal auf "Datei auswählen" klicken, die entsprechende Datei auswählen und auf "Send" klicken.
 

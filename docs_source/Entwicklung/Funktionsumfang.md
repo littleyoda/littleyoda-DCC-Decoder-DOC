@@ -5,7 +5,7 @@ Befehle können, je nach Hardware, über die folgenden Wege empfangen werden:
 
 - klassisch über ein DCC-Signal<br>(Schaltung mit Optokoppler ist notwendig)
 - [z21-Zentrale](http://www.z21.eu/) drahtlos über WLAN.<br>
-    Hierbei spielt es keine Rolle, wie die z/Z21 angesteuert wird (Z21-App, Multimaus, WLAN Maus, ...). Der Decoer kommuniziert mit der z/Z21 via WLAN und erhält so den aktuellen Zustand der Loks und Weichen.
+    Hierbei spielt es keine Rolle, wie die z/Z21 angesteuert wird (Z21-App, Multimaus, WLAN Maus, ...). Der Decoder kommuniziert mit der z/Z21 via WLAN und erhält so den aktuellen Zustand der Loks und Weichen.
 - Über die WLAN-Maus oder über die Z21-App ohne(!) z21-Zentrale. <br>
  Hierbei simuliert der esp8266 eine z21 und die WLAN-Maus oder die Z21-App kommuniziert direkt mit dem Decoder.
 * Webbrowser drahtlos via WLAN<br>Rudimentäre Unterstützung über jeden aktuellen Browser

@@ -33,4 +33,4 @@ TODO
 	- "libraries/ArduinoJson/fuzzing/"
 - Unter Arduino/"Add a library to the selected Projekt
  	Hier müssen die folgenden Library aktiviert werden:
-	![](img/EU_Libs1.png)
+	![](/img/EU_Libs1.png)
