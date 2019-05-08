@@ -37,3 +37,9 @@ nav:
 - Erklärungen:
     - H-Bridge: Erklärungen/H-Bridge.md    
 - FAQ: FAQ.md
+
+
+plugins:
+  - exclude:
+      glob:
+        - "*.md~"

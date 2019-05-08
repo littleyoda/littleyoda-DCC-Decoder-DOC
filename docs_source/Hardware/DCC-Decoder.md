@@ -1,3 +1,3 @@
 Basisschaltung für einen DCC-Decoder
 
-![](/img/Schaltung-DCC-Decoder.png) 
+![](../img/Schaltung-DCC-Decoder.png) 

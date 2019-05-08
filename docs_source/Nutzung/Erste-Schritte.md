@@ -27,23 +27,23 @@ Nur das ESP8266-Board (ohne weitere Platinen oder ähnliches) wird an den Rechne
 
 Nach dem Starten muss als erstes die richtige BIN-Datei ausgewählt werden:
 
-![](/img/FlasherConfigured.jpg)
+![](..//img/FlasherConfigured.jpg)
 
 
 Danach kann mit dem Flashen begonnen werden, in dem auf den "Flash"-Button geklickt wird.
 
-![](/img/FlasherReadyToGo.JPG)
+![](../img/FlasherReadyToGo.JPG)
 
 
 Wenn das Flashen erfolgreich durchgeführt wurde, solltet ihr folgende Meldung sehen (MAC-Adresse können natürlich abweichen):
 
-![](/img/FlasherFlashedOK.JPG)
+![](../img/FlasherFlashedOK.JPG)
 
 Wartet nach dem ersten erfolgreichen Flashen erstmal knapp eine halbe Minute ab. In dieser Zeit formatiert der ESP8266 seinen eingebauten Datenspeicher.
 
 # Erste Kontaktaufnahme
 Die erste Kontaktaufnahme erfolgt über WLAN. Nachdem der ESP8266 fertig ist und ggf. einmal neu gestartet wurde (USB-Kabel raus/rein), sollte er ein eigenes WLAN mit dem Namen "HALLO WORLD" aufspannen. Verbindet euch bitte mit diesem WLAN und gebt in einem Browser die folgende Adresse ein "192.168.4.1". Danach solltet ihr eine Webseite der folgenden Art sehen:
-![](/img/ohneCSS.png)
+![](../img/ohneCSS.png)
 
 Anschließend müssen die Dateien css.css und milligram.min.css hochgeladen werden.
 Hierzu muss das Ordnersymbol angeklickt werden:
@@ -52,7 +52,7 @@ Hierzu muss das Ordnersymbol angeklickt werden:
 Anschließend für beide Dateien jeweils einmal auf "Datei auswählen" klicken, die entsprechende Datei auswählen und auf "Send" klicken.
 
 Die Hauptseite "192.168.4.1" sollte anschließend so aussehen:
-![](/img/mitCSS.png)
+![](../img/mitCSS.png)
 
 # Kontaktaufnahme über die serielle Schnittstelle
 Um bei evtl. Problemen vorbereitet zu sein, solltet ihr jetzt versuchen, über Putty eine Verbindung zum ESP8266 aufzubauen.

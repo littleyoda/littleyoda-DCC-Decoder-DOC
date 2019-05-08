@@ -2,7 +2,7 @@
 
 Dieser Dekoder ist wahlweise mit einer oder zwei [H-Bridge](/Erklärungen/H-Bridge.md) vom Typ [DRV8870](http://www.ti.com/product/DRV8870) ausgestattet und sollte somit auch für Piko-Loks mit zwei Motoren geeignet sein.
 
-![](/img/Lokdekoder_DRV8870.jpg)
+![](../../img/Lokdekoder_DRV8870.jpg)
 
 [Weitere Informationen](http://gartenbahn-45-mm.phpbb8.de/allgemein-f29/lok-akku-und-wlan-nahtlose-z21-integration-t8336-15.html#p105953)
 

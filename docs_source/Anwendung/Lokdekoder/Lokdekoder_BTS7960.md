@@ -13,7 +13,7 @@ Die Lösung kann über 2 Wege gesteuert werden:
 
 ## Schlatplan / Aufbau
 
-![](/img/Lokdekoder_BTS7960.jpg)
+![](../../img/Lokdekoder_BTS7960.jpg)
  
 ## Technischer Hintergrund
 Ich habe den Aufbau über einen Step-Up Regler (Ausgang: ~17V) gewählt, damit ich auch andere Akkupacks anschließen kann, die niedrige Spannungen liefern. Testweise habe ich es mit einer 5V USB Powerbank getestet. Hierbei überhitzt der ausgewählte  Step-Up-Regler. Sollte jemand den 5V Weg gehen wollen, könnte man Kühlköper probieren. Ich vermute aber, dass man einen anderen Step-Up-Regler auswählen müsste.

@@ -6,7 +6,7 @@ Dieses Dokument beschreibt wohl den einfachsten Aufbau eines [DCC Generators](in
 
 Die aktuelle Schaltung besteht aus einem NodeMCU (D1 oder ähnliches würde natürlich auch gehen), einer L298N Motor Platine, einem NPN-Transitor (2N2222A), zwei 1k Ohm Widerstände und einem Akku-Pack.
 
-![](/img/L298nDCC.png)
+![](../../img/L298nDCC.png)
 
 Natürlich können auch andere H-Bridge genutzt werden. Hier muss ggf. noch eine unabhängig 5V Versorgung hinzugefügt werden.
 
@@ -30,9 +30,9 @@ Im Garten Bahn Forum hat er den Einbau [dokumentiert](http://www.gbforum.de/view
 
 [![Harzkamel](https://img.youtube.com/vi/voZzVlcHkOM/0.jpg)](https://www.youtube.com/watch?v=voZzVlcHkOM)
 
-![](/img/DCC_Generator1.jpg)
+![](../../img/DCC_Generator1.jpg)
 *Copyright by Zoltan Egyed*
-![](/img/DCC_Generator2.jpg)
+![](../..//img/DCC_Generator2.jpg)
 *Copyright by Zoltan Egyed*
 
 Bestandteile:

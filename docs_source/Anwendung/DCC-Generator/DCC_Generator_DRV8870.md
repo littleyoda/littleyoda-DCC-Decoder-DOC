@@ -19,7 +19,7 @@ Die Lösung kann über 2 Wege gesteuert werden:
 ## Nutzungsbeispeile
 
 Hier beispielhaft in einer Spur 0 Lok verbaut. Als Decoder wird ein ESU LokSound 4 genutzt. 
-![](/img/DCC_Generator_Spur0.jpg)
+![](../../img/DCC_Generator_Spur0.jpg)
 *Copyright by Ralf Stassrast*
 
 ## Technischer Hintergrund
