@@ -31,7 +31,8 @@ nav:
 - Nutzung:
     - Erste Schritte: Nutzung/Erste-Schritte.md
     - Firmware Updates: Nutzung/Firmware-Updates.md
-- Anwendung:
+    - Konfiguration: Nutzung/Konfiguration.md
+- Anwendungen:
     - DCC-Generator: 
         - Einführung: Anwendung/DCC-Generator/index.md
         - DRV8870: Anwendung/DCC-Generator/DCC_Generator_DRV8870.md
@@ -44,6 +45,7 @@ nav:
     - DCC-Decoder: Hardware/DCC-Decoder.md
     - Susi: Hardware/Susi.md
 - Entwicklung:
+    - Übersicht: Anwendung/Übersicht.html
     - Entwicklungsumgebung: Entwicklung/Entwicklungsumgebung.md
     - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
     - Nutzung Eclipse: Entwicklung/Entwicklung Eclipse.md

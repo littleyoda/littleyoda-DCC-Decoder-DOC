@@ -7,10 +7,11 @@ Es können verschiedene Aktoren angesteuert werden. Z.B.
 - Weichenmotoren
 - LED
 - Servos
-- DC Motoren
+- Normale DC Motoren
 - Standard-DCC-Decoder
+- Steppermotoren
 
-Genutzt wird diese Framework für:
+Genutzt wird dieses Framework für:
 
 - Lokdekoder 
 - Funktionsdekoder
