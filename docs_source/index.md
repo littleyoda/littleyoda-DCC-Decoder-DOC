@@ -2,6 +2,7 @@ Das 'littleyoda-DCC-Decoder' Projekt ist ein flexibles Framework für Modelleise
 und Steuerung.<br>
 
 Basiserend auf einem ESP8266 Mikroprozessor, kann die Software DCC-Befehle auswerten und kann über eine WLAN-Schnittstelle kommunizieren. <br>
+
 Es können verschiedene Aktoren angesteuert werden. Z.B.
 
 - Weichenmotoren

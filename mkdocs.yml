@@ -46,11 +46,13 @@ nav:
     - Susi: Hardware/Susi.md
 - Entwicklung:
     - Übersicht: Anwendung/Übersicht.html
-    - Entwicklungsumgebung: Entwicklung/Entwicklungsumgebung.md
-    - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
-    - Nutzung Eclipse: Entwicklung/Entwicklung Eclipse.md
-    - Debuggen: Entwicklung/DebugSerial.md
     - Framework: Entwicklung/Framework.md
+    - Entwicklungsumgebung: 
+      - Selber kompilieren: Entwicklung/Selber kompilieren.md
+      - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
+      - Nutzung Eclipse: Entwicklung/Entwicklung Eclipse.md
+      - Nutzung PlatformIO: Entwicklung/Entwicklung PlatformIO.md
+    - Debuggen: Entwicklung/DebugSerial.md
 - Erklärungen:
     - H-Bridge: Erklärungen/H-Bridge.md    
 - FAQ: FAQ.md
