@@ -11,7 +11,7 @@
     
     <link rel="shortcut icon" href="../../img/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <title>Nutzung PlatformIO - Little-Yoda Decoer</title>
+    <title>Nutzung PlatformIO (CLI) - Little-Yoda Decoer</title>
     <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
     <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
     <link href="../../css/base.css" rel="stylesheet">
@@ -32,6 +32,8 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Vorgehensweise", url: "#_top", children: [
+          ]},
         ];
 
     </script>
@@ -57,20 +59,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../Entwicklung PlatformIO CLI/" class="btn btn-xs btn-default pull-right">
+      <a href="../DebugSerial/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../Entwicklung PlatformIO CLI/" class="btn btn-xs btn-link">
-        Nutzung PlatformIO (CLI)
+      <a href="../DebugSerial/" class="btn btn-xs btn-link">
+        Debuggen
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../Entwicklung Eclipse/" class="btn btn-xs btn-default pull-left">
+      <a href="../Entwicklung PlatformIO/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../Entwicklung Eclipse/" class="btn btn-xs btn-link">
-        Nutzung Eclipse
+        Previous</a><a href="../Entwicklung PlatformIO/" class="btn btn-xs btn-link">
+        Nutzung PlatformIO
       </a>
     </div>
     
@@ -78,7 +80,16 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    
+    <p>PlatformIO Core (CLI) ist die einfachste Lösung, wenn man keine komplette Entwicklungsumgebung benötigt und nur die Sourcen kompilieren will. PlatformIO Core (CLI) ist nur eine Kommandozeilen Tool, welches PlatformIO Projekte kompilieren kann.</p>
+<h4 id="vorgehensweise">Vorgehensweise</h4>
+<ul>
+<li>PlatformIO Core (CLI) nach <a href="https://docs.platformio.org/en/latest/installation.html">Anleitung)</a> installieren</li>
+<li>Sourcen herhunterladen oder wieder git clonen:<br />
+<a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/releases/tag/v1.1.9">Zip-File</a><br />
+git clone https://github.com/littleyoda/littleyoda-DCC-Decoder.git</li>
+<li>Firmware erstellen<br />
+platformio run </li>
+</ul>
 
   <br>
     
@@ -91,20 +102,20 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
   <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
     
     <div class="wm-article-nav pull-right">
-      <a href="../Entwicklung PlatformIO CLI/" class="btn btn-xs btn-default pull-right">
+      <a href="../DebugSerial/" class="btn btn-xs btn-default pull-right">
         Next
         <i class="fa fa-chevron-right" aria-hidden="true"></i>
       </a>
-      <a href="../Entwicklung PlatformIO CLI/" class="btn btn-xs btn-link">
-        Nutzung PlatformIO (CLI)
+      <a href="../DebugSerial/" class="btn btn-xs btn-link">
+        Debuggen
       </a>
     </div>
     
     <div class="wm-article-nav">
-      <a href="../Entwicklung Eclipse/" class="btn btn-xs btn-default pull-left">
+      <a href="../Entwicklung PlatformIO/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../Entwicklung Eclipse/" class="btn btn-xs btn-link">
-        Nutzung Eclipse
+        Previous</a><a href="../Entwicklung PlatformIO/" class="btn btn-xs btn-link">
+        Nutzung PlatformIO
       </a>
     </div>
     
@@ -115,7 +126,7 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
 <footer class="col-md-12 wm-page-content">
       <p>
-        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Entwicklung/Entwicklung PlatformIO.md"><i class="fa fa-github"></i>
+        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Entwicklung/Entwicklung PlatformIO CLI.md"><i class="fa fa-github"></i>
 Edit on GitHub</a>
       </p>
   <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
