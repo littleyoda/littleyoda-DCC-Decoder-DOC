@@ -37,10 +37,13 @@ nav:
         - Einführung: Anwendung/DCC-Generator/index.md
         - DRV8870: Anwendung/DCC-Generator/DCC_Generator_DRV8870.md
         - L298N: Anwendung/DCC-Generator/DCC_Generator_L298N.md
-    - Weichendekoder: Anwendung/Weichendekoder/USECASE_Weichendekoder.md
+    - Weichendekoder: 
+        - Einführung: Anwendung/Weichendekoder/USECASE_Weichendekoder.md
     - Lokdekoder:
         - BTS7960: Anwendung/Lokdekoder/Lokdekoder_BTS7960.md
         - DRV8870: Anwendung/Lokdekoder/Lokdekoder_DRV8870.md
+    - Gleisstellwerk:
+        - Einführung: Anwendung/Gleisstellwerk/Gleisstellwerk.md
 - Basis Schaltungen:
     - DCC-Decoder: Hardware/DCC-Decoder.md
     - Susi: Hardware/Susi.md
