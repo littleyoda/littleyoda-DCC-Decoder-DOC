@@ -32,6 +32,10 @@
       var is_top_frame = false;
         
         var pageToc = [
+          {title: "Konfigfile", url: "#_top", children: [
+              {title: "Generator", url: "#generator" },
+              {title: "URL", url: "#url" },
+          ]},
         ];
 
     </script>
@@ -78,8 +82,32 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 
     
 
-    <p>TODO<br />
-<a href="https://spurg.open4me.de/configgenerator">Generator für Konfigfiles</a></p>
+    <h3 id="konfigfile">Konfigfile</h3>
+<h4 id="generator">Generator</h4>
+<p>Standard-Konfigfile können über einen Generator erzeugt werden: <a href="https://spurg.open4me.de/configgenerator">Generator für Konfigfiles</a></p>
+<h4 id="url">URL</h4>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/format</td>
+<td>Filesystem wird formatiert. Hierbei werden alle Dateien gelöscht.</td>
+</tr>
+<tr>
+<td>/firmware</td>
+<td>Upload-Möglichkeit für eine neue Firmware</td>
+</tr>
+<tr>
+<td>/cfg</td>
+<td>FÜr diverse Module temporäre Einstellungsmöglichkeiten. Werden für einem Neustart nicht gespeichert.</td>
+</tr>
+</tbody>
+</table>
 
   <br>
     

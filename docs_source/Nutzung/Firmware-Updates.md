@@ -3,6 +3,7 @@ Sollte irgendwann mal der Bedarf bestehen die Software, die auf dem ESP8266 läu
 Die hochgeladenen Dateien (config.json, CSS-Datein) bleiben bei diesem Prozess unverändert!
 
 Folgende Schritte sind notwendig:
+
 - [Download](https://github.com/littleyoda/littleyoda-DCC-Decoder/releases) der aktuellen Firmware (Bin-Datei)
 - Über einen Browser auf den ESP826 zugreifen
     - http://ip-addr/firmware also z.B. http://192.168.0.111/firmware

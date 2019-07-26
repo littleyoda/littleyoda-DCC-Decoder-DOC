@@ -33,7 +33,7 @@
         
         var pageToc = [
           {title: "Gleisstellwerk", url: "#_top", children: [
-              {title: "Aktueller Entwicklungsststand", url: "#aktueller-entwicklungsststand" },
+              {title: "Aktueller Entwicklungsstand", url: "#aktueller-entwicklungsstand" },
               {title: "Hardware", url: "#hardware" },
           ]},
         ];
@@ -71,10 +71,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     </div>
     
     <div class="wm-article-nav">
-      <a href="../../Lokdekoder/Lokdekoder_DRV8870/" class="btn btn-xs btn-default pull-left">
+      <a href="../../Lokdekoder/Lokdekoder_D1Mini/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../../Lokdekoder/Lokdekoder_DRV8870/" class="btn btn-xs btn-link">
-        DRV8870
+        Previous</a><a href="../../Lokdekoder/Lokdekoder_D1Mini/" class="btn btn-xs btn-link">
+        D1 Motor Shield
       </a>
     </div>
     
@@ -83,28 +83,28 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
     
 
     <h3 id="gleisstellwerk">Gleisstellwerk</h3>
-<p>Motiviert durch eine Anfrage von Nobert, habe ich alle Funktionalität eingebaut, wie man für ein kabelloses Gleisstellwerk benötigt. <br />
+<p>Motiviert durch eine Anfrage von Nobert, habe ich alle Funktionalität eingebaut, die man für ein kabelloses Gleisstellwerk benötigt. <br />
 Kabellos meint in diesem Zusammenhang, dass alle Weichen-Befehle per Wlan übertragen werden. Es wird somit nur Strom benötigt, welches aber auch per Akku zur Verfügung gestellt werden kann.</p>
 <p>Aktuell funktioniert der Gleisstellwerk Prototyp &ldquo;nur&rdquo; mit einer z21, eine Nutzung von Rocrail sollte mit vertretbaren Aufwand möglich sein.</p>
-<h4 id="aktueller-entwicklungsststand">Aktueller Entwicklungsststand</h4>
+<h4 id="aktueller-entwicklungsstand">Aktueller Entwicklungsstand</h4>
 <p>Prototypische Implementierung für eine Weiche. </p>
 <p><a href="http://www.open4me.de/my-content/prototype_element_gleisstellwerk.mp4">Video</a></p>
 <ol>
 <li>
-<p>Mit dem Taster kann ich den Zustand der Weiche ändern.<br />
+<p>Mit dem Taster kann der Zustand der Weiche geändert werden<br />
 Wenn der Taster gedrückt wird, wird der Befehl zum Weichenstellen an die Z21 gesendet.</p>
 </li>
 <li>
 <p>Die LEDS reagieren auf die Rückmeldung der z21.<br />
-Wenn die Z21 einen Befehl zum Weichenstellen erhält, meldet die z21 die Änderung an den ESP8266 und die LED ändern sich entsprechend.<br />
-Die LEDS zeigen somit immer den Zustand der z21 an.</p>
+Wenn die Z21 einen Befehl zum Weichenstellen erhält, meldet die z21 die Änderung an den ESP8266 und die LEDs ändern sich entsprechend.<br />
+Die LEDs zeigen somit immer den Zustand der z21 an.</p>
 </li>
 </ol>
 <h4 id="hardware">Hardware</h4>
 <p>Hauptkomponenten sind ein ESP8266 (z.B. D1 mini)<br />
 <img alt="" src="../../../img/Pult_Schaltplan.png" /> </p>
 <p>Um eine Weiche zu steuern, werden ein NPN-Transistor (z.B. 2N2222A), ein PNP-Transistor (z.B. BC327-40), zwei LEDS, ein Taster und drei Wiederstände (220 OHm) benötigt. <br />
-Da der D1 mini nicht genügend IO-Pin hat, werden Port-Erweiterungen vom Typ MCP23017 genötigt. Ein MCP23017 kann dann jeweils 8 Weeichen ansteuern. </p>
+Da der D1 mini nicht genügend IO-Pin hat, werden Port-Erweiterungen vom Typ MCP23017 genötigt. Ein MCP23017 kann dann jeweils 8 Weichen ansteuern. </p>
 
   <br>
     
@@ -127,10 +127,10 @@ Da der D1 mini nicht genügend IO-Pin hat, werden Port-Erweiterungen vom Typ MCP
     </div>
     
     <div class="wm-article-nav">
-      <a href="../../Lokdekoder/Lokdekoder_DRV8870/" class="btn btn-xs btn-default pull-left">
+      <a href="../../Lokdekoder/Lokdekoder_D1Mini/" class="btn btn-xs btn-default pull-left">
         <i class="fa fa-chevron-left" aria-hidden="true"></i>
-        Previous</a><a href="../../Lokdekoder/Lokdekoder_DRV8870/" class="btn btn-xs btn-link">
-        DRV8870
+        Previous</a><a href="../../Lokdekoder/Lokdekoder_D1Mini/" class="btn btn-xs btn-link">
+        D1 Motor Shield
       </a>
     </div>
     
