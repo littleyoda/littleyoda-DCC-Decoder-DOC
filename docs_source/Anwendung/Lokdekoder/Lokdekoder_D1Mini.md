@@ -19,6 +19,7 @@ Die I2C Adresse sowie einige andere Features können mit Lötpads auf der Unters
 - Von den drei Lötpads STBY müssen die beiden für I2C verbunden werden
 - RST padden und STBY auf I2C (um)padden.
 - Für die Standard-Adresse 48, müssen AD0 und AD1 offen sein
+- Den Pin "S" auf High (3,3V) ziehen
 
 | AD1 | AD0 | Adresse (HEX)  | Adresse (DEC) |
 | -------- | -------- | -------- | ---- |

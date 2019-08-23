@@ -27,6 +27,7 @@ markdown_extensions:
 
 nav:
 - Home: index.md
+- Präsentation: Praesentation/p.md
 - Funktionsumfang: Entwicklung/Funktionsumfang.md
 - Nutzung:
     - Erste Schritte: Nutzung/Erste-Schritte.md
