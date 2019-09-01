@@ -45,13 +45,13 @@ Das Signal wird im ESP8266 über den SPI-Ausgang erzeugt. Dieser Ausgang hat ein
 
 ### "Halbes" DCC
 An D7 liegt aber nur eine Art "positive Halbwelle" des DCC-Signales an. 
-Da das DCC-Signal aber eine Wechselspannung ist, wird auch noch "negative Halbwelle" benötigt. Diese Halbwelle wird aus dem Signal von D7 durch einen Transistor erzeugt, der das Signal invertiert (siehe zweites Signal).
+Da das DCC-Signal aber eine Wechselspannung ist, wird auch noch eine "negative Halbwelle" benötigt. Diese Halbwelle wird aus dem Signal von D7 durch einen Transistor erzeugt, der das Signal invertiert (siehe zweites Signal).
 Es werden DCC-Paketen für die Geschwindigkeit und Richtung erzeugt, sowie Pakete für den Zustand von F0 bis F28.
 
 
 ## Prototypen
 
-Da Julian Zimmermann, der diesen Ansatz im Spassbahn-Forum [vorgestellt](http://www.spassbahn.de/forum/index.php?thread/11462-spa%C3%9Flan-topfschlagen-im-minenfeld/&postID=117854) hatte, keine Zeit hatte ihn zu verfeinern und mich das Technische interessierte, habe ich ihn um die Sourcen gebeten, damit ich es in mein Framework integrieren kann. Nach einigen frustrierenden Abenden habe ich einen Prototypen zum laufen gebracht: Der Motorblock reagierte endlich auf die generierten DCC-Befehle.
+Da Julian Zimmermann, der diesen Ansatz im Spassbahn-Forum [vorgestellt](http://www.spassbahn.de/forum/index.php?thread/11462-spa%C3%9Flan-topfschlagen-im-minenfeld/&postID=117854) hatte, keine Zeit hatte ihn zu verfeinern und mich die technische Seite interessierte, habe ich ihn um die Sourcen gebeten, damit ich es in mein Framework integrieren kann. Nach einigen frustrierenden Abenden habe ich einen Prototypen zum laufen gebracht: Der Motorblock reagierte endlich auf die generierten DCC-Befehle.
 
 [Entwicklungsgeschichte](http://gartenbahntechnik.de/viewtopic.php?f=22&t=418)
 

@@ -123,10 +123,10 @@ if (is_top_frame) { $('body').addClass('wm-top-page'); }
 <p>Das Signal wird im ESP8266 über den SPI-Ausgang erzeugt. Dieser Ausgang hat einen Hardware-Buffer, so dass sichergestellt ist, dass das DCC-Timing eingehalten wird. Es wird also immer ein DCC-Paket erzeugt, in das notwendige SPI-Format gewandelt und anschließend in den Hardware-Buffer geschrieben. Bei den ersten Tests stellt sich heraus, dass die SPI-Library beim Senden so lange blockiert, bis das Paket komplett verschickt wurde. Außerdem belegte die Library direkt drei GPIO für MISO, MOSI, SCK. Aus diesem Grund wurde die SPI-Library an die Bedürfnisse dieses Frameworks angepasst. Jetzt wird im einfachsten Fall nur noch ein Pin (13 bzw. D7) genutzt. Dieser Pin ist fest, da er der einzige nutzbare Pin mit Hardware-mäßiger SPI Unterstützung ist.</p>
 <h5 id="halbes-dcc">&ldquo;Halbes&rdquo; DCC</h5>
 <p>An D7 liegt aber nur eine Art &ldquo;positive Halbwelle&rdquo; des DCC-Signales an. <br />
-Da das DCC-Signal aber eine Wechselspannung ist, wird auch noch &ldquo;negative Halbwelle&rdquo; benötigt. Diese Halbwelle wird aus dem Signal von D7 durch einen Transistor erzeugt, der das Signal invertiert (siehe zweites Signal).<br />
+Da das DCC-Signal aber eine Wechselspannung ist, wird auch noch eine &ldquo;negative Halbwelle&rdquo; benötigt. Diese Halbwelle wird aus dem Signal von D7 durch einen Transistor erzeugt, der das Signal invertiert (siehe zweites Signal).<br />
 Es werden DCC-Paketen für die Geschwindigkeit und Richtung erzeugt, sowie Pakete für den Zustand von F0 bis F28.</p>
 <h4 id="prototypen">Prototypen</h4>
-<p>Da Julian Zimmermann, der diesen Ansatz im Spassbahn-Forum <a href="http://www.spassbahn.de/forum/index.php?thread/11462-spa%C3%9Flan-topfschlagen-im-minenfeld/&amp;postID=117854">vorgestellt</a> hatte, keine Zeit hatte ihn zu verfeinern und mich das Technische interessierte, habe ich ihn um die Sourcen gebeten, damit ich es in mein Framework integrieren kann. Nach einigen frustrierenden Abenden habe ich einen Prototypen zum laufen gebracht: Der Motorblock reagierte endlich auf die generierten DCC-Befehle.</p>
+<p>Da Julian Zimmermann, der diesen Ansatz im Spassbahn-Forum <a href="http://www.spassbahn.de/forum/index.php?thread/11462-spa%C3%9Flan-topfschlagen-im-minenfeld/&amp;postID=117854">vorgestellt</a> hatte, keine Zeit hatte ihn zu verfeinern und mich die technische Seite interessierte, habe ich ihn um die Sourcen gebeten, damit ich es in mein Framework integrieren kann. Nach einigen frustrierenden Abenden habe ich einen Prototypen zum laufen gebracht: Der Motorblock reagierte endlich auf die generierten DCC-Befehle.</p>
 <p><a href="http://gartenbahntechnik.de/viewtopic.php?f=22&amp;t=418">Entwicklungsgeschichte</a></p>
 <p>Aus diesem Prototypen haben sich die oben genannten Schaltungen entwickelt.</p>
 
@@ -165,10 +165,12 @@ Es werden DCC-Paketen für die Geschwindigkeit und Richtung erzeugt, sowie Paket
 
 <footer class="col-md-12 wm-page-content">
       <p>
-        <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Anwendung/DCC-Generator/index.md"><i class="fa fa-github"></i>
-Edit on GitHub</a>
+          Dieses Werk ist lizenziert unter einer 
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz
+          </a>.<br/>
+        Fehler gefunden? Dann direkt <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Anwendung/DCC-Generator/index.md">hier</a> ändern!
       </p>
-  <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a> using <a href="https://github.com/gristlabs/mkdocs-windmill">Windmill</a> theme by Grist Labs.</p>
 </footer>
 
 </body>

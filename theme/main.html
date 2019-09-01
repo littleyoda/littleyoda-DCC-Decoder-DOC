@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{%- block footer %}
+  {%- block repo %}
+    {%- if page and page.edit_url %}
+      <p>
+          Dieses Werk ist lizenziert unter einer 
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz
+          </a>.<br/>
+        Fehler gefunden? Dann direkt <a href="{{ page.edit_url }}">hier</a> ändern!
+      </p>
+    {%- elif config.repo_url %}
+      <p>
+        <a href="{{ config.repo_url }}">{% include 'repo-icon.html' %}{{ config.repo_name }}</a>
+      </p>
+    {%- endif %}
+  {%- endblock %}
+
+  {%- if config.copyright %}<p>{{ config.copyright }}</p>{%- endif %}
+{%- endblock %}
+
