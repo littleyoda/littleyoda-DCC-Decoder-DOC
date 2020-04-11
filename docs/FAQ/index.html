@@ -38,6 +38,9 @@
           {title: "Hardware", url: "#hardware", children: [
               {title: "Unterst\u00fctzung ESP32", url: "#unterstutzung-esp32" },
           ]},
+          {title: "Fragen bei der Nutzung", url: "#fragen-bei-der-nutzung", children: [
+              {title: "Config-File ist fehlerhaft und nun keine Verbindung zu dem ESP mehr.", url: "#config-file-ist-fehlerhaft-und-nun-keine-verbindung-zu-dem-esp-mehr" },
+          ]},
         ];
 
     </script>
@@ -82,6 +85,21 @@ Jedes Endgerät (z21-App/WLan-Maus) und jeder Decoder, der per WLAN kommuniziert
 <h3 id="hardware">Hardware</h3>
 <h4 id="unterstutzung-esp32">Unterstützung ESP32</h4>
 <p>Eine Unterstützung des ESP32 ist begonnen, wird aber noch Zeit in Anspruch nehmen. </p>
+<h3 id="fragen-bei-der-nutzung">Fragen bei der Nutzung</h3>
+<h4 id="config-file-ist-fehlerhaft-und-nun-keine-verbindung-zu-dem-esp-mehr">Config-File ist fehlerhaft und nun keine Verbindung zu dem ESP mehr.</h4>
+<p><strong> Lösung 1 (falls Verbindung über USB möglich) </strong><br />
+Über die serielle Schnittstelle kann das Config-File gelöscht werden:<br />
+&ldquo;debug&rdquo; eingeben und anschließen &ldquo;D&rdquo; eingeben. Nach dem Neustart baut der<br />
+ESP ein Access Point auf</p>
+<p><strong> Lösung 2 (falls Kontrolle über die Stromversorgung) </strong><br />
+Durch die folgende Befehle, kann ein Access Point aktiviert werden und anschließend das Config-File korrigiert werden:</p>
+<ul>
+<li>ESP für 20 Sekunden einschalten</li>
+<li>danach ausschalten</li>
+<li>Einschalten und nach ca. 6 Sekunden wieder ausschalten<br>(er sollte mindestens 2 Sekunden laufen, darf aber nicht länger als 10 Sekunden laufen)</li>
+<li>Einschalten</li>
+<li>Nach ein paar Sekunden sosllte das WLAN-Netz &ldquo;Hallo World&rdquo; verfügbar sein</li>
+</ul>
 
   <br>
     
