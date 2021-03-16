@@ -56,8 +56,6 @@ nav:
     - Framework: Entwicklung/Framework.md
     - Entwicklungsumgebung: 
       - Selber kompilieren: Entwicklung/Selber kompilieren.md
-      - Nutzung Arduino: Entwicklung/Entwicklung Arduino.md
-      - Nutzung Eclipse: Entwicklung/Entwicklung Eclipse.md
       - Nutzung PlatformIO: Entwicklung/Entwicklung PlatformIO.md
       - Nutzung PlatformIO (CLI): Entwicklung/Entwicklung PlatformIO CLI.md
     - Debuggen: Entwicklung/DebugSerial.md
