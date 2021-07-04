@@ -48,6 +48,8 @@ nav:
         - D1 Motor Shield: Anwendung/Lokdekoder/Lokdekoder_D1Mini.md
     - Gleisstellwerk:
         - Einführung: Anwendung/Gleisstellwerk/Gleisstellwerk.md
+    - Sound:
+        - Einführung: Anwendung/Sound/Basic.md
 - Basis Schaltungen:
     - DCC-Decoder: Hardware/DCC-Decoder.md
     - Susi: Hardware/Susi.md

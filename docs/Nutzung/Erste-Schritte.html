@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Sven Bursch-Osewold">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Erste Schritte - Little-Yoda Decoer</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Erste Schritte", url: "#_top", children: [
+          ]},
+          {title: "Hardware", url: "#hardware", children: [
+          ]},
+          {title: "Programm \u00fcbertragen", url: "#programm-ubertragen", children: [
+          ]},
+          {title: "Erste Kontaktaufnahme", url: "#erste-kontaktaufnahme", children: [
+          ]},
+          {title: "Konfigurieren", url: "#konfigurieren", children: [
+          ]},
+          {title: "Kontaktaufnahme \u00fcber die serielle Schnittstelle", url: "#kontaktaufnahme-uber-die-serielle-schnittstelle", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Firmware-Updates.html" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Firmware-Updates.html" class="btn btn-xs btn-link">
+        Firmware Updates
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Entwicklung/Funktionsumfang.html" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Entwicklung/Funktionsumfang.html" class="btn btn-xs btn-link">
+        Funktionsumfang
+      </a>
+    </div>
+    
+  </div>
+
+    
+
+    <h3 id="erste-schritte">Erste Schritte</h3>
+<p>Die Seite soll euch bei den ersten Schritten unterstützen.</p>
+<h3 id="hardware">Hardware</h3>
+<p>Für die ersten Schritte, benötigt ihr eine ESP8266-Platine und ein passenden USB-Kabel.</p>
+<p>Ich empfehle entweder den <a href="http://s.click.aliexpress.com/e/rnqr7AI">Nodemcu V2(*)</a> oder den <a href="http://s.click.aliexpress.com/e/nuzRzJ2">D1 Mini(*)</a>, die für wenige Euros in Asien bestellt werden können. Je nach Verwendungszweck sind die <a href="Platinen">Platinen</a> mal auf den Nodemcu und mal auf den D1 Mini oder auf ein anderes Modell auslegt.</p>
+<h3 id="programm-ubertragen">Programm übertragen</h3>
+<p>Um den ESP nutzen zu können, muss als erstes die Firmware auf den ESP geflasht werden.</p>
+<p>Um diesen Vorgang möglichst einfach zu halten, existiert der <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder-Flasher/releases/latest">LittleYoda Flasher</a> für Windows und Linux.</p>
+<p>Das ESP8266-Board (ohne weitere Platinen oder ähnliches) wird direkt an den Rechner angeschlossen und anschließend der LittleYoda-Flasher gestartet.</p>
+<p><img alt="" src="../img/flash1.png" /></p>
+<p>Zum Flashen wird nun der erkannte ESP ausgewählt (z.B. /dev/ttyUSB0 unter Linux oder COM9 unter Windows) werden.</p>
+<p>Unten links muss eine für das Board passende Firmware (D1 Mini, Nodemcu V2, &hellip;) ausgewählt werden. Für jedes Board existieren üblicherweise zwei Versionen. Eine Release-Version (&ldquo;1.x.x&rdquo;) und eine Entwickler-Version (&ldquo;Alpha/Beta&rdquo;). Ohne guten Grund sollte die Release-Version genutzt werden, da diese in der Regel stabiler als die Entwickler-Version ist.</p>
+<p>Das Flashen kann anschließend über den Befehl &ldquo;Hochladen&rdquo; gestartet werden.</p>
+<p>Nach dem ersten erfolgreichen Flashen sollte ca. 30 Sekunden gewartet werden, da in dieser Zeit der ESP seinen eingebauten Flash-Speicher formatiert.</p>
+<h3 id="erste-kontaktaufnahme">Erste Kontaktaufnahme</h3>
+<p>Die erste Kontaktaufnahme erfolgt über WLAN. Nachdem der ESP8266 fertig ist und ggf. einmal neu gestartet wurde (USB-Kabel raus/rein), sollte er ein eigenes WLAN mit dem Namen &ldquo;HALLO WORLD&rdquo; aufspannen. Verbindet euch bitte mit diesem WLAN und gebt in einem Browser die folgende Adresse ein &ldquo;192.168.4.1&rdquo;. Danach solltet ihr eine Webseite der folgenden Art sehen:<br />
+<img alt="" src="../img/ohneCSS.png" /></p>
+<p>Anschließend müssen die Dateien css.css und milligram.min.css hochgeladen werden.<br />
+Hierzu muss das Ordnersymbol angeklickt werden:<br />
+<img alt="" src="/img/ohneCSSList.png" /></p>
+<p>Anschließend für beide Dateien jeweils einmal auf &ldquo;Datei auswählen&rdquo; klicken, die entsprechende Datei auswählen und auf &ldquo;Send&rdquo; klicken.</p>
+<p>Die Hauptseite &ldquo;192.168.4.1&rdquo; sollte anschließend so aussehen:<br />
+<img alt="" src="../img/mitCSS.png" /></p>
+<h3 id="konfigurieren">Konfigurieren</h3>
+<p>In diesem Zustand kann der ESP8266 noch nicht viel. Als nächstes muss die Konfigurations-Datei hochgeladen werden. Die Konfiguration ist von dem <a href="Platine">Einsatzzweck</a> abhängig. <br />
+Mit Hilfe des <a href="https://spurg.open4me.de/configgenerator">Config-Generators</a> kann die passende Konfiguration erstellt werden. Unter dem Punkt &ldquo;Voreinstellungen&rdquo; können diverse Konfigurationen für die Standard-Anwendungen ausgewählt werden.<br />
+Die Konfiguration muss als config.json gespeichert werden.</p>
+<h3 id="kontaktaufnahme-uber-die-serielle-schnittstelle">Kontaktaufnahme über die serielle Schnittstelle</h3>
+<p>Bei Problemen mit dem ESP ist ggf. ein Zugriff über die serielle Schnittstelle notwendig.</p>
+<p>Hierzu kann der LittleYoda Flasher genutzt werden. Wie beim Flashen wird der ESP wieder über ein USB-Kabel mit dem Computer verbunden. Der passende Gerät wird in dem &ldquo;Devices&rdquo;-Tab ausgewählt und anschließend kann über dem Befehl &ldquo;Verbinden&rdquo; im &ldquo;Serieller Monitor&rdquo;-Tab die Verbindung aufgebaut werden.</p>
+<p>Durch die Angabe des Befehl &ldquo;debug&rdquo; in dem Textfeld, kann der ESP in den Debug-Modus geschaltet werden. </p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+  <div class="row wm-article-nav-buttons" role="navigation" aria-label="navigation">
+    
+    <div class="wm-article-nav pull-right">
+      <a href="Firmware-Updates.html" class="btn btn-xs btn-default pull-right">
+        Next
+        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+      </a>
+      <a href="Firmware-Updates.html" class="btn btn-xs btn-link">
+        Firmware Updates
+      </a>
+    </div>
+    
+    <div class="wm-article-nav">
+      <a href="../Entwicklung/Funktionsumfang.html" class="btn btn-xs btn-default pull-left">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        Previous</a><a href="../Entwicklung/Funktionsumfang.html" class="btn btn-xs btn-link">
+        Funktionsumfang
+      </a>
+    </div>
+    
+  </div>
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+          Dieses Werk ist lizenziert unter einer 
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz
+          </a>.<br/>
+        Fehler gefunden? Dann direkt <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/Nutzung/Erste-Schritte.md">hier</a> ändern!
+      </p>
+</footer>
+
+</body>
+</html>

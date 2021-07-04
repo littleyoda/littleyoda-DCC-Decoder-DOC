@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="author" content="Sven Bursch-Osewold">
+    
+    <link rel="shortcut icon" href="../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Platinen - Little-Yoda Decoer</title>
+    <link href="../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "Weichendecoder", url: "#_top", children: [
+          ]},
+          {title: "Lokdekoder 1", url: "#lokdekoder-1", children: [
+          ]},
+          {title: "Lokdekoder (DRV8870)", url: "#lokdekoder-drv8870", children: [
+          ]},
+          {title: "Lokdekoder (BTS7960)", url: "#lokdekoder-bts7960", children: [
+          ]},
+          {title: "WLAN nach DCC Decoder", url: "#wlan-nach-dcc-decoder", children: [
+          ]},
+          {title: "Entwicklungsgeschichte", url: "#entwicklungsgeschichte", children: [
+          ]},
+        ];
+
+    </script>
+    <script src="../js/base.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+
+    <p>Ein Hinweis vorab: <br />
+Fertige Dekoder oder Bausätze biete ich aus rechtlichen Gründen nicht an. Platinen könnt ihr, so lange der Vorrat reicht, bei mir gegen Unkostenbeitrag + Porto erhalten und ich bin gerne bereit euch Bezugsquellen für die einzelnen Bauteile zu nennen, wenn es hier Probleme gibt.</p>
+<p>Hier einige Beispiele</p>
+<h3 id="weichendecoder">Weichendecoder</h3>
+<p>Ein einfacher Weichendecoder, der zwei Weichenmotoren ansteuern kann.<br />
+Die Befehle werden entweder per DCC von den Schienen empfangen oder per WLAN von einer Z21.</p>
+<p><a href="USECASE_Weichendekoder">Weitere Informationen</a></p>
+<p><a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/tree/master/Config-Templates/WeichenDecoder">Konfigfile</a></p>
+<h3 id="lokdekoder-1">Lokdekoder 1</h3>
+<p>Ein einfacher Lokdekoder, der eine fertige <a href="Begriff-H-Bridge">H-Bridge</a> nutzt.<br />
+Die Befehle werden entweder per DCC von den Schienen empfangen oder per WLAN von einer Z21.</p>
+<p><a href="http://spurg.open4me.de/wordpress/786/Lokdekoder">Weitere Informationen</a></p>
+<h3 id="lokdekoder-drv8870">Lokdekoder (DRV8870)</h3>
+<p>Ein einfacher Lokdekoder, der einen <a href="http://www.ti.com/product/DRV8870">DRV8870</a> als <a href="Begriff-H-Bridge">H-Bridge</a> nutzt.<br />
+Bedingt durch die Bauform des DRV8870 nicht so ganz einfach zu löten.</p>
+<p><a href="USECASE_Lokdekoder_DRV8870">Mehr Informationen</a></p>
+<h3 id="lokdekoder-bts7960">Lokdekoder (BTS7960)</h3>
+<p>ein einfacher Lokdekoder, der eine BTS7960 Platine als <a href="Begriff-H-Bridge">H-Bridge</a> nutzt.<br />
+<a href="USECASE_Lokdekoder_BTS7960">Mehr Informationen</a> </p>
+<h3 id="wlan-nach-dcc-decoder">WLAN nach DCC Decoder</h3>
+<p>Ein Deocder, der ein DCC Signal generiert, mit denen klassische DCC-Decoder betrieben werden kann.<br />
+Sinnvoll, wenn man auf die Funktionalität von klassischen DCC-Decodern (Sound, &hellip;) nicht verzichten will, aber DCC über Schienen nicht nutzen will.</p>
+<p><a href="USECASE_DCC_Generator">Mehr Informationen</a><br><br />
+<a href="USECASE_DCC_Generator_L298N">L298N-Bridge</a><br><br />
+<a href="USECASE_DCC_Generator_DRV8870">DRV8870</a></p>
+<h3 id="entwicklungsgeschichte">Entwicklungsgeschichte</h3>
+<p>Eine Übersicht über die verschiedenen Entwicklungsstränge, die im Laufe der Zeit entstanden sind:<br />
+<a href="https://raw.githubusercontent.com/wiki/littleyoda/littleyoda-DCC-Decoder/img/Entwicklungsgeschichte.svg?sanitize=true">Entwicklungsstränge</a><br />
+Für einige Entwicklungsschritte sind weitere Informationen verlinkt.</p>
+
+  <br>
+    
+
+    <br>
+</div>
+
+<footer class="container-fluid wm-page-content">
+      <p>
+          Dieses Werk ist lizenziert unter einer 
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz
+          </a>.<br/>
+        Fehler gefunden? Dann direkt <a href="https://github.com/littleyoda/littleyoda-DCC-Decoder/edit/master/docs/old/Platinen.md">hier</a> ändern!
+      </p>
+</footer>
+
+</body>
+</html>
