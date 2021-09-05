@@ -7,9 +7,10 @@ Rocrail kann als Software-Lösung dienen, um diese Einschränkung zu umgehen.
 
 # Hardware
 ## Unterstützung ESP32
-Eine Unterstützung des ESP32 ist begonnen, wird aber noch Zeit in Anspruch nehmen. 
+Der (Standard)-ESP32 wird für viele Dinge unterstützt. Erzeugung von DCC
+Signalen fehlt jedoch z.B. noch.
 
-
+Nicht unterstützt werden z.B. die ESP32-S2, ESP32-C3 oder ESP-C6.
 
 # Fragen bei der Nutzung
 ## Config-File ist fehlerhaft und nun keine Verbindung zu dem ESP mehr.
