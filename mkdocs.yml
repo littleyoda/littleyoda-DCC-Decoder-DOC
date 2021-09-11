@@ -53,6 +53,9 @@ nav:
 - Basis Schaltungen:
     - DCC-Decoder: Hardware/DCC-Decoder.md
     - Susi: Hardware/Susi.md
+    - Rotary-Encoder: Hardware/Rotaryencoder.md
+    - Portexpander: Hardware/Portexpander.md
+    - DCC-Generierung: Hardware/DCC-Generierung.md
 - Entwicklung:
     - Übersicht: Anwendung/Übersicht.html
     - Framework: Entwicklung/Framework.md
